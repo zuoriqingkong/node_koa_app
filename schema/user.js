@@ -23,6 +23,12 @@ module.exports = (sequelize, DataTypes) => {
             get(){
                 return moment(this.getDataValue('cerateTime').format('YYYY-MM-DD HH:mm:ss'))
             }
+        },
+        updateTime:{
+            type: DataTypes.DATE,
+            get(){
+                return moment(this.getDataValue('updateTime').format('YYYY-MM-DD HH:mm:ss'))
+            }
         }
     });
 }
