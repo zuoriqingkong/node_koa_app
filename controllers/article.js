@@ -15,7 +15,7 @@ class articleController {
                     data
                 };
             } catch (error) {
-                
+                console.log(error)
             }
         }else{
             ctx.response.status = 303;
